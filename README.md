@@ -1,7 +1,6 @@
-#Setup
+## Setup
 
-Run docker-compose build.
+Run `docker-compose build`. 
+## Start
 
-Start
-
-Run docker-compose up to create and start the app, redis and mongo containers.
+Run `docker-compose up` to create and start the `app`, `redis` and `mongodb` containers. 
