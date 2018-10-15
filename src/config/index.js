@@ -7,7 +7,7 @@ const CLIENT = '/client';
 export default {
   secret: `your_secret_key`, // Secret Key
   server: { // Express
-    ip: 'localhost',
+    ip: '0.0.0.0',
     port: 8000,
   },
   log: true, // show logs
@@ -45,7 +45,7 @@ export default {
   },
   mongoose: { // MongoDB
     // uri: mongodb://username:password@host:port/database?options
-    uri: `mongodb://localhost:27017/${DB_NAME}`,
+    uri: `mongodb://mongo:27017/${DB_NAME}`,
     options: {
     },
     seed: {
