@@ -7,7 +7,7 @@ const CLIENT = '/client';
 export default {
   secret: `your_secret_key`, // Secret Key
   server: { // Express
-    ip: '0.0.0.0',
+    ip: 'localhost'',
     port: 8000,
   },
   log: true, // show logs
@@ -28,13 +28,13 @@ export default {
     port: 8001, // public port listen, change also in views/default/demo.js
     example: true, // router -> http://localhost:8000/socket 
     redis: { // Redis config
-      host: '127.0.0.1',
+      host: 'redis',
       port: 6379
     }
   },
   "redis-jwt": { // Sessions
     //host: '/tmp/redis.sock', //unix domain
-    host: '127.0.0.1', //can be IP or hostname
+    host: 'redis', //can be IP or hostname
     port: 6379, // port
     maxretries: 10, //reconnect retries, default 10
     //auth: '123', //optional password, if needed
